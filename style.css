@@ -1,0 +1,186 @@
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', 'sans-serif';
+    font-style: normal;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+}
+
+.desktop-hero {
+    display: none;
+}
+
+
+/* Typography */
+
+.text-container>h1 {
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 4.2rem;
+    text-align: center;
+    letter-spacing: 1.08254rem;
+    color: #423A3A;
+}
+
+#span {
+    font-weight: 300;
+    font-size: 4rem;
+    line-height: 4.2rem;
+    text-align: center;
+    letter-spacing: 1.08254rem;
+    color: #CE9898;
+}
+
+.text-container>p {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    text-align: center;
+    color: #CE9898;
+}
+
+#form {
+    position: relative;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    border: 0.1rem solid #CE9898;
+    border-radius: 2.8rem;
+    width: 31.1rem;
+    height: 4.8rem;
+    display: flex;
+}
+
+#email {
+    border: none;
+    background: none;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    color: #CE9898;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.arrow {
+    position: absolute;
+    width: 6.4rem;
+    height: 4.8rem;
+    background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    box-shadow: 0px 1.5rem 2rem rgba(198, 110, 110, 0.247569);
+    border-radius: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    left: 79.42%;
+}
+
+
+/* Positioning */
+
+header {
+    padding: 3.1rem 0 3.2rem 3.2rem
+}
+
+.text-container {
+    padding: 6.4rem 3.2rem 3.2rem 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Responsive styles for desktop version */
+
+@media screen and (min-width:1440px) {
+    .mobile-hero {
+        display: none;
+    }
+    .desktop-hero {
+        display: block;
+    }
+    html {
+        background: #fff7f7;
+        overflow: hidden;
+    }
+    body {
+        background-image: url(./images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: calc(62%);
+    }
+    header {
+        padding-top: 7.5rem;
+        padding-left: 16.5rem;
+        width: 15.8rem;
+        height: 3.3rem;
+    }
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .img-container {
+        position: absolute;
+        top: 0;
+    }
+    .wrapper {
+        width: 44.5rem;
+        height: 40.4rem;
+        position: absolute;
+        left: 16.5rem;
+        top: 23.4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .text-container {
+        gap: 3.2rem;
+        padding: 0 0 4rem 0;
+    }
+    .text-container>h1 {
+        text-align: left;
+        font-size: 6.4rem;
+        line-height: 7.1rem;
+        letter-spacing: 1.73206rem;
+        color: #423A3A;
+    }
+    #span {
+        font-weight: 300;
+        font-size: 6.4rem;
+        line-height: 6.4rem;
+        letter-spacing: 1.73206rem;
+        color: #CE9898;
+    }
+    .text-container>p {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+        text-align: left;
+    }
+    #form {
+        width: 44.5rem;
+        height: 5.6rem;
+    }
+    #email {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+    }
+    .arrow {
+        width: 10rem;
+        height: 5.6rem;
+    }
+}
